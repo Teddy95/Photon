@@ -1,0 +1,22 @@
+type Person {
+	_id: ID!
+	username: String!
+	name: String
+	mail: String!
+}
+
+type Project {
+	_id: ID!
+	created: String!
+	name: String!
+	description: String
+	icon: String!
+	ownerId: Person!
+}
+
+type Query {
+	persons: [Person]
+	person(_id: ID!): Person
+	projects: [Project]
+	project(_id: ID!): Project
+}
