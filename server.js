@@ -4,7 +4,6 @@ require('graphql-import-node/register')
 // Import required modules
 const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
-const { importSchema } = require('graphql-import')
 const resolvers = require('./resolvers')
 const schema = require('./schema.graphql')
 
